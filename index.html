@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lista de Compras - Quicklist</title>
+  </head>
+  <body>
+    <main class="lista-de-compras">
+      <header class="logo">
+        <img
+          class="larkef-x-rareblocks"
+          src="https://c.animaapp.com/mbi0tglf1RxiZ6/img/larkef-x-rareblocks---logo--38-1.svg"
+          alt="Logo Quicklist"
+        />
+        <h1 class="text-wrapper-2">quicklist</h1>
+      </header>
+      <nav>
+        <a href="#" class="link-button">← Voltar</a>
+      </nav>
+      <h2 class="title-page">Compras da semana</h2>
+      <form class="add-item">
+      <!--<label for="new-item" class="visually-hidden">Adicione um novo item</label> -->
+        <input type="text" id="new-item" class="input" placeholder="Adicione um novo item" />
+        <button type="submit" class="button">
+          <span class="state-layer">
+            <span class="label-text">Adicionar item</span>
+          </span>
+        </button>
+      </form>
+      <ul class="list">
+        <li class="items">
+          <input type="checkbox" id="item1" class="checkbox" />
+          <label for="item1" class="item">Pão de forma</label>
+          <button class="icon-delete" aria-label="Remover item">
+            <img class="frame" src="https://c.animaapp.com/mbi0tglf1RxiZ6/img/frame.svg" alt="Ícone de lixeira" />
+          </button>
+        </li>
+        <li class="items">
+          <input type="checkbox" id="item2" class="checkbox" />
+          <label for="item2" class="item">Café preto</label>
+          <button class="icon-delete" aria-label="Remover item">
+            <img class="frame" src="https://c.animaapp.com/mbi0tglf1RxiZ6/img/frame.svg" alt="Ícone de lixeira" />
+          </button>
+        </li>
+        <li class="items">
+          <input type="checkbox" id="item3" class="checkbox" />
+          <label for="item3" class="item">Suco de laranja</label>
+          <button class="icon-delete" aria-label="Remover item">
+            <img class="frame" src="https://c.animaapp.com/mbi0tglf1RxiZ6/img/frame.svg" alt="Ícone de lixeira" />
+          </button>
+        </li>
+        <li class="items">
+          <input type="checkbox" id="item4" class="checkbox" />
+          <label for="item4" class="item">Bolacha</label>
+          <button class="icon-delete" aria-label="Remover item">
+            <img class="frame" src="https://c.animaapp.com/mbi0tglf1RxiZ6/img/frame.svg" alt="Ícone de lixeira" />
+          </button>
+        </li>
+      </ul>
+      <div class="alert" role="alert">
+        <img
+          class="img"
+          src="https://c.animaapp.com/mbi0tglf1RxiZ6/img/warning-circle-filled.svg"
+          alt="Ícone de alerta"
+        />
+        <p class="title">O item foi removido da lista</p>
+        <button class="close-alert" aria-label="Fechar alerta">
+          <img class="img" src="https://c.animaapp.com/mbi0tglf1RxiZ6/img/delete-small.svg" alt="Ícone de fechar" />
+        </button>
+      </div>
+    </main>
+    <script scr="scripts.js"></script>
+  </body>
+</html>

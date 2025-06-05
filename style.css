@@ -1,0 +1,160 @@
+/* Estilo simplificado da lista de compras */
+
+body {
+  font-family: "Sora", sans-serif;
+  background-color: #f4f5fb;
+  margin: 0;
+  padding: 20px;
+}
+
+.lista-de-compras {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f5fb;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.logo img {
+  width: 30px;
+  height: auto;
+}
+
+.logo h1 {
+  font-size: 26px;
+  color: #374151;
+  font-weight: 700;
+}
+
+.link-button {
+  display: inline-block;
+  color: #ca3884;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.title-page {
+  font-size: 20px;
+  color: #080b12;
+  margin-bottom: 16px;
+}
+
+.add-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 2px solid #d1d5db;
+  border-radius: 12px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #374151;
+}
+
+.button {
+  background-color: #ca3884;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px; 
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #b32d70;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  padding: 10px 14px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.checkbox:checked {
+  background-color: #ca3884;
+  border-color: #ca3884;
+}
+
+.item {
+  flex: 1;
+  color: #374151;
+}
+
+.icon-delete {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.icon-delete:hover {
+  background-color: #f3f4f6;
+}
+
+.alert {
+  display: flex;
+  align-items:center;
+  gap: 10px;
+  background-color: #c93847;
+  color: #fff;
+  padding: 8px;
+  border-radius: 12px;
+  margin-top: 35px;
+}
+
+.alert .alert-title {
+  flex: 1;
+}
+
+.close-alert {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .add-item {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
