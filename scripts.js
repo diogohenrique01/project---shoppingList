@@ -2,6 +2,8 @@ const input = document.getElementById("new-item")
 const form = document.querySelector("form")
 const items = document.querySelector("items")
 const list = document.querySelector(".list")
+const alertBox = document.querySelector(".alert")
+const alertCloseBtn = document.querySelector(".close-alert")
 
 
 //substituindo números por str vazias
@@ -34,5 +36,11 @@ form.addEventListener("submit", (event)=>{
 
 })
 
-
-
+//remover item da lista com botão
+list.addEventListener("click", (event)=>{
+  if(event.target.closest(".icon-delete")){
+    const li = event.target.closest("li")
+    li.remove()
+    showAlert()
+  }
+})
