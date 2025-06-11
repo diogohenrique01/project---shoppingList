@@ -50,3 +50,10 @@ alertCloseBtn.addEventListener("click", (event)=> {
  alertBox.style.display = "none"
 })
 
+//Mostrando alerta de remoção
+function showAlert(){
+  alertBox.style.display = "flex"
+  setTimeout(() => {
+    alertBox.style.display = "none"
+  },3000)
+}
