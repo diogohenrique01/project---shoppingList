@@ -3,6 +3,7 @@ const form = document.querySelector("form")
 const items = document.querySelector("items")
 const list = document.querySelector(".list")
 const alertBox = document.querySelector(".alert")
+alertBox.style.display = "none"
 const alertCloseBtn = document.querySelector(".close-alert")
 
 
