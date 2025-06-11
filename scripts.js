@@ -44,3 +44,9 @@ list.addEventListener("click", (event)=>{
     showAlert()
   }
 })
+
+//fechar o alerta
+alertCloseBtn.addEventListener("click", (event)=> {
+ alertBox.style.display = "none"
+})
+
